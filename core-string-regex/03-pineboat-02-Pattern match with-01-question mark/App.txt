@@ -1,0 +1,17 @@
+Tale of three musketeers
+A question mark (?), a plus (+) and an asterisk (*) met at a battle ground. Each is differently sighted. The humble question mark says, I can see none or just one. Plus (+) says, I need to see at least one or more. Asterisk says, I get you both, I can see none, one, or more.
+
+One of them is cleverly hiding what he is capable of.
+
+The question mark gets on stage first.
+
+/a?/.test(""); //true
+/a?/.test("a"); //true
+/a?/.test("b"); //true!
+/a?/.test("aa"); //true 
+/^a?$/.test("aa"); //false
+Matches empty string "" as ? stands for 0 or 1.
+Matches a - one match
+Matches b - matches 0 occurrence
+Matches aa - one match and the second a is not part of the pattern.
+/^a?$/ does not match aa as it looks for zero or one a, start to end, nothing more, nothing less.

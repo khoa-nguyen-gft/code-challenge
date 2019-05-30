@@ -1,0 +1,15 @@
+The plus (+) looks at question mark and remarks, “I’m impressed, but your focus is so binary!”. And takes the stage to show off.
+
+/a+/.test("a"); //true
+/a+/.test("aa"); //true 
+/a+/.test("ba"); //true!
+/^a+$/.test("aa"); //true
+
+/a+/.test(""); //false
+/a+/.test("b"); //false
+/^a+$/.test("ab"); //false
+Remember what plus (+) said? It can match one or more occurrences of preceeding pattern.
+
+All those returning true have one or more a. We even managed to get a whole string comprised only of a in the last one that returned true with /^a+$/.
+
+false should make sense now, but a word on the last one that returned false. /^a+$/ looks for a start to end, no other characters allowed. Which is why ab failed the test.

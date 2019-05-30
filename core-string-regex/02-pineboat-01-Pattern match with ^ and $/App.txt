@@ -1,0 +1,14 @@
+Pattern match End to End
+That paves the road to pattern match start to end, you might as well call it end to end.
+
+let e=/^[0-9]$/
+e.test("42"); //false - NO!
+e.test("The answer is 42"); //false
+e.test("7"); //true 
+Surprisingly, the first one failed when we added ^ and $.
+
+/^[0-9]$/ in plain English reads like, go to the start of the string. Look for a single numeral from the character set. Check if the string ends right there. That’s the reason the last entry returned true. It is just a single number, start to end.
+
+That’s not what we wanted. We wanted to test if the string had one or more numerals.
+
+We are very close. One last thing we need to learn is, how to instruct the pattern to look for more than one character in the set.

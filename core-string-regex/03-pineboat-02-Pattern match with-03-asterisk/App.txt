@@ -1,0 +1,12 @@
+Finally, start (*) of the show gets on stage. Boasts that, “I can duel alone or duel you both at once” and says, “I can match zero, one or more”.
+
+/a*/.test("a"); //true
+/a*/.test("aa"); //true 
+/a*/.test("ba"); //true
+/a*/.test(""); //true
+/a*/.test("b"); //true
+/^a*$/.test("aa"); //true
+/^a*$/.test(""); //true
+
+/^a*$/.test("ab"); //false
+Except the last one, * was able to handle all else. /^a*$/ reads like, 0 or more a start to end. Which is why empty string "" passed the test and "ab" failed.
