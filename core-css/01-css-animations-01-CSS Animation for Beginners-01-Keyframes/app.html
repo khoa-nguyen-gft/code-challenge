@@ -1,0 +1,28 @@
+<style>
+    @keyframes mymove {
+        0%{
+            transform: scale(0.1);
+            width: 10px;
+        }
+        60%{
+            transform: scale(1.2);
+            opacity: 0;
+            width: 300px;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+            width: 800px;
+        }
+    }
+
+    #mymoveId{
+        width: 10px;
+        height: 20px;
+        animation: mymove 10s ease-in forwards;
+        background: red;
+        content: "";
+
+    }
+</style>
+<div id= 'mymoveId'> </div>
