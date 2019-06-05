@@ -1,0 +1,59 @@
+<style>
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: #F5F5F5;
+        color: #555;
+        font-size: 1.1em;
+        font-family: Helvetica Neue;
+    }
+    .container {
+        margin: 50px auto;
+        min-width: 320px;
+        max-width: 500px;
+    }
+
+    .element {
+        width: 100px;
+        height: 100px;
+        background-color: #0099cc;
+        border-radius: 50%;
+        position: relative;
+        top: 0;
+        animation: jump 2s infinite;
+
+    }
+
+ 
+
+    @keyframes jump {
+        from{
+            top: 100px;
+            animation-timing-function: ease-out;
+        }
+        25%{
+            top: 50px;
+            animation-timing-function: ease-in;
+        }
+
+        50%{
+            top: 150px;
+            animation-timing-function: ease-out;
+        }
+
+        75%{
+            top: 75px;
+            animation-timing-function: ease-in;
+        }
+
+        top{
+            top: 100px;
+        }
+    }
+</style>
+<div class="container">
+    <p>Infinite</p>
+    <div class="element"></div>
+</div>

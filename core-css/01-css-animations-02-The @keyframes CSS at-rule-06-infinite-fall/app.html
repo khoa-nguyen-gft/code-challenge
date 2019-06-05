@@ -1,0 +1,50 @@
+<style>
+    @import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic,700italic);
+  
+
+    body{
+        background-color: #F5F5F5;
+        color: #555;
+        font-size: 1.1em;
+        font-family: Helvetica Neue;
+    }
+    .container {
+        margin: 50px auto;
+        min-width: 320px;
+        max-width: 500px;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .element {
+        font-size: 3em;
+        font-weight: bold;
+        color: #0099cc;
+      
+        position: relative;
+        top: 0;
+        animation: fall 4s infinite;
+        transform-origin: left center;
+    }
+
+ 
+
+    @keyframes fall {
+        from{
+            transform: rotate(0) translateX(0);
+            opacity: 1;
+        }   
+        50% , 60% {
+            transform: rotate(90deg) translateX(0);
+        }
+        to{
+            transform: rotate(90deg) translateX(200px);
+            opacity: 0;
+        }
+    }
+
+</style>
+<div class="container">
+    <p>Infinite</p>
+    <div class="element">Falling Test</div>
+</div>

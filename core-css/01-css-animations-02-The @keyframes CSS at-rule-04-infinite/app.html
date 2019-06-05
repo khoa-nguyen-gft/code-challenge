@@ -1,0 +1,63 @@
+<style>
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: #F5F5F5;
+        color: #555;
+        font-size: 1.1em;
+        font-family: Helvetica Neue;
+    }
+    .container {
+        margin: 100px auto;
+        min-width: 300px;
+        max-width: 500px;
+        padding: 1em;
+        box-sizing: border-box;
+        border: 1px solid #aaa;
+    }
+
+    .element {
+        padding: 20px;
+        width: 30px;
+        height: 30px;
+        background-color: #0073b9;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .element-1{
+        animation: jump 3s infinite;
+    }
+
+    @keyframes jump {
+        from{
+            top: 100px;
+            animation-timing-function: ease-out;
+        }
+        0%{
+            top: 50px;
+            animation-timing-function: ease-in;
+        }
+
+        50%{
+            top: 150px;
+            animation-timing-function: ease-out;
+        }
+
+        75%{
+            top: 75px;
+            animation-timing-function: ease-in;
+        }
+
+        top{
+            top: 100px;
+        }
+    }
+</style>
+<div class="container">
+    <p>Hover over the container to see the element animate:</p>
+    <div class="element element-1"></div>
+</div>
