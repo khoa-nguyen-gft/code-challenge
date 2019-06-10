@@ -1,0 +1,34 @@
+<style>
+    .ball{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;      
+        background: linear-gradient(35deg,
+      #ccffff,
+      #ffcccc);  
+        position: relative;
+        animation-name: fall;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+
+    #ball-1{
+        left: 27%;
+    }
+
+    #ball-2{
+        left: 56%;
+    }
+
+    @keyframes fall{
+        0%{
+            top: 0px;
+        }
+
+        100%{
+            top: 300px;
+        }
+    }
+</style>
+<div class="ball" id="ball-1"></div>
+<div class="ball" id="ball-2"></div>

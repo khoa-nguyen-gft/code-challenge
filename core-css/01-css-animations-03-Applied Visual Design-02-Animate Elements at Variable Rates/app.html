@@ -1,0 +1,46 @@
+<style>
+    #black1{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        /* Because <gradient>s belong to the <image> data type, they can only be used 
+        where <image>s can be used. For this reason, linear-gradient() won't work on 
+        background-color and other properties that use the <color> data type. */
+        /* background-color: linear-gradient( black, #000099, #66c2ff, #ffcccc, #ffeee6); */
+        background: linear-gradient( black, #000099, #66c2ff, #ffcccc, #ffeee6);
+    }
+
+    .stars{
+        background-color: yellow;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        animation-iteration-count: infinite;
+    }
+    .star-1 {
+        margin-top:15%;
+        margin-left:60%;
+        animation-name: twinkle;
+        animation-duration: 1s;
+    }
+    .star-2 {
+        margin-top: 25%;
+        margin-left: 25%;
+        animation-name: twinkle;
+        animation-duration: 1s;
+
+    }
+    @keyframes twinkle{
+        20%{
+            transform: scale(0.5);
+            opacity: 0.5;
+        }
+    }
+</style>
+<div id="black1"></div>
+<div class="stars star-1"></div>
+<div class="stars star-2"></div>
