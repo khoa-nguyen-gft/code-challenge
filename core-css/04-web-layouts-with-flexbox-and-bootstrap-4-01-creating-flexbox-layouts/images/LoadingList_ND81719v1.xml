@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LoadingList>
+    <messageId>82819_1</messageId>
+    <documentStatus>insert</documentStatus>
+    <parentMessageId></parentMessageId>
+    <shipAgency>AZIENDA AGENTE1</shipAgency>
+    <shipAgencyPIVA>33333333333</shipAgencyPIVA>
+    <shipVoyage>
+       <voyageId>NAVE_KOHA_20190828</voyageId>
+       <shipName>PELAGIANI</shipName>
+       <shipCallSign>9HA3410</shipCallSign>
+       <shipowner>MSC  MEDITERRANEAN SHIPPING CO. SA.</shipowner>
+       <shipownerBicCode>MSC</shipownerBicCode>
+       <eta>2019-08-22T12:00:00.000+02:00</eta>
+       <etd>2019-08-30T13:30:00.000+02:00</etd>
+       <portOfArrival>GENOVA</portOfArrival>
+       <portOfArrivalCode>ITGOA</portOfArrivalCode>
+       <terminal>TEST4444</terminal>
+       <terminalCode>44444444444</terminalCode>
+       <terminalVoyageId>16307</terminalVoyageId>
+    </shipVoyage>
+    <containers>
+	<Container>
+            <containerId>CON19082801</containerId>
+            <isoCode>20G0</isoCode>
+            <bookingNumber>209</bookingNumber>
+            <portOfDischarge>SOYO-QUINFUQUENA TERMINAL</portOfDischarge>
+            <portOfDischargeCode>AOSOQ</portOfDischargeCode>
+            <empty>false</empty>
+	</Container>
+    </containers>
+</LoadingList>

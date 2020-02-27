@@ -1,0 +1,70 @@
+.logo {
+    width: auto;
+    height: 150px;
+}
+
+.banner{
+    height: 150px;
+    background-image: url("../images/shutterstock_116403520.jpg");
+    background-size: cover;
+    background-position: center -100px;
+
+}
+
+.text_center{
+    text-align: center;
+}
+
+.callOuts {
+    border: 1px solid #d7d8da;
+}
+
+.callOuts img {
+    width: 100px;
+    height: auto;
+}
+
+.d-block {
+    display: block!important;
+}
+
+.bottomArea{
+    background-color: #424243;
+    height: 250px;
+    color: white;
+    font-size: .8rem;
+
+}
+.w-60{
+    width: 60%;
+}
+
+.w-20{
+    width: 20%;
+}
+.h-30{
+    width: 30%;
+}
+
+/*Responsive code*/
+@media (min-width: 576px){
+    .banner{
+        height: 200px;
+    }
+}
+/*Medium device*/
+@media (min-width: 768px){
+    .banner{
+        height: 300px;
+    }
+}
+/*Large device*/
+@media (min-width: 992px){
+    .banner{
+        height: 400px;
+    }
+}
+/*Extra large devices*/
+@media (min-width: 1200px){
+
+}
